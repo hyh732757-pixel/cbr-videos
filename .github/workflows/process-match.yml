@@ -1,0 +1,35 @@
+name: process-match
+run-name: "경기 처리 ${{ inputs.mid }}"
+on:
+  workflow_dispatch:
+    inputs:
+      video_url: {description: "영상 링크", required: true}
+      mid: {description: "경기 ID (예: m10)", required: true}
+      lineup: {description: "라인업 JSON(선택, 비우면 로비 화면에서 자동 인식)", required: false, default: ""}
+      pipeline_tag: {description: "처리 묶음 릴리스 태그", required: false, default: "pipeline-v1"}
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 300
+    steps:
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.13"}
+      - name: 프로그램 설치
+        run: |
+          sudo apt-get -qq update && sudo apt-get -qq install -y tesseract-ocr ffmpeg >/dev/null
+          pip -q install --index-url https://download.pytorch.org/whl/cpu torch==2.14.1 torchvision==0.29.1
+          pip -q install numpy==2.4.6 scikit-learn==1.9.1 scipy==1.18.1 opencv-python-headless==5.0.0.93 ultralytics==8.4.173 openvino==2026.4.1 rapidfuzz==3.14.6 pytesseract==0.3.13 pillow==12.3.0
+          tesseract --version | head -1; ffmpeg -version | head -1; nproc; free -g | head -2
+      - name: 처리 묶음 받기
+        env: {GH_TOKEN: "${{ github.token }}", TAG: "${{ inputs.pipeline_tag }}"}
+        run: |
+          gh release download "$TAG" -p 'cbr_pipeline.tgz' -R "$GITHUB_REPOSITORY" -D /tmp
+          sudo mkdir -p /home/claude && sudo chown "$USER" /home/claude && tar xzf /tmp/cbr_pipeline.tgz -C /home/claude
+      - name: 경기 처리
+        env: {URL: "${{ inputs.video_url }}", MID: "${{ inputs.mid }}", LINEUP: "${{ inputs.lineup }}"}
+        run: bash /home/claude/pipe/gha_run.sh "$URL" "$MID" "$LINEUP"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: "result-${{ inputs.mid }}", path: out/, retention-days: 30}
