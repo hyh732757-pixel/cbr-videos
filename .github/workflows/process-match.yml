@@ -30,6 +30,10 @@ jobs:
           cat pkgsrc/pkg/cbr_pipeline.tgz.part* > /tmp/cbr_pipeline.tgz
           test "$(md5sum /tmp/cbr_pipeline.tgz | cut -c1-32)" = "$(cat pkgsrc/pkg/md5.txt)" || { echo "묶음 파일 손상"; exit 1; }
           sudo mkdir -p /home/claude && sudo chown "$USER" /home/claude && tar xzf /tmp/cbr_pipeline.tgz -C /home/claude && rm -rf pkgsrc
+      - uses: actions/checkout@v4
+        with: {path: mainsrc, sparse-checkout: overlay}
+      - name: 작은 수정 덮어쓰기(overlay)
+        run: cp -r mainsrc/overlay/. /home/claude/ && rm -rf mainsrc
       - name: 경기 처리
         env: {URL: "${{ inputs.video_url }}", MID: "${{ inputs.mid }}", LINEUP: "${{ inputs.lineup }}"}
         run: bash /home/claude/pipe/gha_run.sh "$URL" "$MID" "$LINEUP"
