@@ -1,0 +1,36 @@
+Asriel29         us    0 opp   20 other   0 → opp (100%)
+KABO_H           us    1 opp   52 other   2 → opp (98%)
+AZLATANERA       us    1 opp   93 other   0 → opp (99%)
+GAETERLING       us   13 opp    2 other   1 → us (87%)
+KR_Gang          us  135 opp    3 other   8 → us (98%)
+myman6           us   60 opp   19 other  76 → us (76%)
+Kidz43           us  104 opp    4 other   3 → us (96%)
+Holibe           us   34 opp    0 other   0 → us (100%)
+MandoolsLove     us   90 opp    6 other   1 → us (94%)
+e_dembel         us   47 opp    1 other   0 → us (98%)
+2KR_Fantomupein  us    0 opp   41 other   0 → opp (100%)
+YAMADAMITIO      us    0 opp   55 other   0 → opp (100%)
+GI_GGS           us    1 opp   31 other   0 → opp (97%)
+OLambesten       us    1 opp   34 other   0 → opp (97%)
+jet_black_boy10  us    0 opp   19 other   0 → opp (100%)
+ToRPopcom        us    5 opp   30 other   3 → opp (86%)
+DUNK(나)          us  122 opp    4 other   6 → us (97%)
+GarethBale0413   us   30 opp    6 other   3 → us (83%)
+ufomg123         us   38 opp   18 other   4 → us (68%)
+2pirop2345       us    0 opp    9 other   0 → opp (100%)
+JANG_BUTTER      us   91 opp    8 other   5 → us (92%)
+
+our players: 11
+  GK   myman6           avg (11.5, 28.1)  samples 83
+  LB   GAETERLING       avg (35.3, 13.3)  samples 180
+  LCB  KR_Gang          avg (33.4, 24.7)  samples 744
+  RCB  DUNK(나)          avg (40.8, 40.5)  samples 3247
+  RB   Kidz43           avg (44.0, 44.8)  samples 855
+  CDM  Holibe           avg (52.1, 33.2)  samples 501
+  LCM  JANG_BUTTER      avg (58.6, 26.2)  samples 937
+  RCM  MandoolsLove     avg (55.2, 44.0)  samples 562
+  CAM  ufomg123         avg (62.9, 31.5)  samples 474
+  LS   GarethBale0413   avg (60.0, 26.9)  samples 429
+  RS   e_dembel         avg (66.0, 41.9)  samples 534
+learned marker hue {'DUNK(나)': 165, 'KR_Gang': 21, 'GAETERLING': 34, 'Holibe': 70, 'MandoolsLove': 142, 'e_dembel': 75}
+{'kept': 3778, 'far': 4373, 'other-color': 51, 'color-mismatch': 57}

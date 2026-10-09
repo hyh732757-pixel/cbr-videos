@@ -1,0 +1,11 @@
+star team {'us': 2482, 'other': 115, 'opp': 220}
+colored markers on our team: 9964
+marker clusters {np.int32(0): (2147, 'H70 S139 V250'), np.int32(1): (2403, 'H22 S177 V213'), np.int32(2): (595, 'H142 S216 V199'), np.int32(3): (2859, 'H35 S146 V240'), np.int32(4): (166, 'H108 S134 V188'), np.int32(5): (277, 'H168 S174 V205'), np.int32(6): (1399, 'H74 S138 V247'), np.int32(7): (118, 'H122 S178 V203')}
+chosen identities: 6
+star → pid {0: 1}
+half 1: our player is leftmost in 0.85 of frames → we attack right
+half 2: our player is leftmost in 0.41 of frames → we attack left
+pid counts {0: 4620, 3: 2842, 1: 2378, 6: 1343, 2: 591, 5: 161}
+role assignment {'CDM': (0, [44.5, 38.4], 4620), 'LCM': (3, [51.3, 23.3], 2842), 'LCB': (1, [38.9, 27.0], 2378), 'CAM': (6, [54.9, 38.5], 1343), 'RCM': (2, [53.4, 53.3], 591), 'RCB': (5, [23.7, 47.1], 161)}
+tracks 4414 median len 7.0 mean 14.7
+pid filled by tracklets 6777 conflicting tracks 195
