@@ -33,6 +33,15 @@ jobs:
       - name: 경기 처리
         env: {URL: "${{ inputs.video_url }}", MID: "${{ inputs.mid }}", LINEUP: "${{ inputs.lineup }}"}
         run: bash /home/claude/pipe/gha_run.sh "$URL" "$MID" "$LINEUP"
+      - name: 요약 남기기(로그 대신)
+        if: always()
+        run: |
+          echo "::notice title=파일::$(ls out 2>/dev/null | tr '\n' ' ')"
+          [ -f out/timeline.txt ] && echo "::notice title=단계별 시간::$(tr '\n' '|' < out/timeline.txt)"
+          [ -f out/run_video.log ] && echo "::notice title=처리 로그 끝::$(grep -a '누적' out/run_video.log | tail -25 | cut -c1-160 | tr '\n' '|')"
+          [ -f out/run_video.log ] && echo "::notice title=오류::$(grep -a -i -E 'error|Traceback' out/run_video.log | tail -8 | cut -c1-200 | tr '\n' '|')"
+          for f in out/audit_*.log; do [ -f "$f" ] && echo "::notice title=$f::$(grep -a -E '===|⚠|🔎|Traceback|Error' "$f" | head -12 | cut -c1-200 | tr '\n' '|')"; done
+          true
       - name: 결과를 results 브랜치에 저장
         if: always()
         env: {MID: "${{ inputs.mid }}", RID: "${{ github.run_id }}"}
@@ -42,7 +51,7 @@ jobs:
           git config --global user.name "github-actions"; git config --global user.email "actions@users.noreply.github.com"
           git clone -q --depth 1 --branch results "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" /tmp/rb 2>/dev/null || { git init -q /tmp/rb && git -C /tmp/rb checkout -q -b results && git -C /tmp/rb remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"; }
           mkdir -p "/tmp/rb/$D" && cp -r "/tmp/res/$D/." "/tmp/rb/$D/"
-          cd /tmp/rb && git add -A && git commit -q -m "결과 ${MID} (run ${RID})" && for i in 1 2 3; do git pull -q --rebase origin results 2>/dev/null; git push -q origin results && break; sleep 5; done
+          cd /tmp/rb && git add -A && git commit -q --allow-empty -m "결과 ${MID} (run ${RID})" && for i in 1 2 3; do git pull -q --rebase origin results 2>/dev/null; git push -q origin results && break; sleep 5; done
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: "result-${{ inputs.mid }}", path: out/, retention-days: 30}
