@@ -8,7 +8,7 @@ on:
       lineup: {description: "라인업 JSON(선택, 비우면 로비 화면에서 자동 인식)", required: false, default: ""}
       pipeline_tag: {description: "처리 묶음 브랜치", required: false, default: "pipeline-v1"}
 permissions:
-  contents: read
+  contents: write
 jobs:
   run:
     runs-on: ubuntu-24.04
@@ -33,6 +33,16 @@ jobs:
       - name: 경기 처리
         env: {URL: "${{ inputs.video_url }}", MID: "${{ inputs.mid }}", LINEUP: "${{ inputs.lineup }}"}
         run: bash /home/claude/pipe/gha_run.sh "$URL" "$MID" "$LINEUP"
+      - name: 결과를 results 브랜치에 저장
+        if: always()
+        env: {MID: "${{ inputs.mid }}", RID: "${{ github.run_id }}"}
+        run: |
+          D="results/${MID}_${RID}"; mkdir -p "/tmp/res/$D"
+          cp out/*.json out/*.txt out/*.log "/tmp/res/$D/" 2>/dev/null || true
+          git config --global user.name "github-actions"; git config --global user.email "actions@users.noreply.github.com"
+          git clone -q --depth 1 --branch results "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" /tmp/rb 2>/dev/null || { git init -q /tmp/rb && git -C /tmp/rb checkout -q -b results && git -C /tmp/rb remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"; }
+          mkdir -p "/tmp/rb/$D" && cp -r "/tmp/res/$D/." "/tmp/rb/$D/"
+          cd /tmp/rb && git add -A && git commit -q -m "결과 ${MID} (run ${RID})" && for i in 1 2 3; do git pull -q --rebase origin results 2>/dev/null; git push -q origin results && break; sleep 5; done
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: "result-${{ inputs.mid }}", path: out/, retention-days: 30}
