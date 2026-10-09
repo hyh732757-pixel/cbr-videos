@@ -51,7 +51,7 @@ jobs:
           git config --global user.name "github-actions"; git config --global user.email "actions@users.noreply.github.com"
           git clone -q --depth 1 --branch results "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" /tmp/rb 2>/dev/null || { git init -q /tmp/rb && git -C /tmp/rb checkout -q -b results && git -C /tmp/rb remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"; }
           mkdir -p "/tmp/rb/$D" && cp -r "/tmp/res/$D/." "/tmp/rb/$D/"
-          cd /tmp/rb && git add -A && git commit -q --allow-empty -m "결과 ${MID} (run ${RID})" && for i in 1 2 3; do git pull -q --rebase origin results 2>/dev/null; git push -q origin results && break; sleep 5; done
+          cd /tmp/rb && git add -A && git commit -q --allow-empty -m "결과 ${MID} (run ${RID})" && for i in 1 2 3; do git pull -q --rebase origin results 2>/dev/null || true; git push -q origin results && break; sleep 5; done
       - uses: actions/upload-artifact@v4
         if: always()
         with: {name: "result-${{ inputs.mid }}", path: out/, retention-days: 30}
