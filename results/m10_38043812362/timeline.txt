@@ -1,0 +1,2 @@
+[10:09:23] 영상 받기 354M (누적 9초)
+[10:09:23] 라인업 지정 {"LS": "GarethBale0413", "RS": "Osumane_dembele1", "CAM": "ufomg123", "LCM": "JANG_BUTTER", "RCM": "Kidz43", "CDM": "Hoiibe", "LB": "GAETERLING", "LCB": "KR_Gang", "RCB": "Gamm_jA", "RB": "MandoolsLove", "GK": "myman6"} (누적 9초)
