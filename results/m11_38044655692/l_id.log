@@ -1,0 +1,38 @@
+SAMBAEK          us   29 opp    0 other   1 → us (100%)
+ufomg123         us   87 opp    4 other   7 → us (96%)
+DUNK(나)          us   71 opp    5 other   1 → us (93%)
+KR_Gang          us    6 opp    0 other   0 → us (100%)
+JANG_BUTTER      us  120 opp    5 other   2 → us (96%)
+Kidz43           us  165 opp   15 other  17 → us (92%)
+GarethBale0413   us   43 opp    2 other   0 → us (96%)
+comba3           us   51 opp    6 other  10 → us (89%)
+kankanO91        us    1 opp   19 other   0 → opp (95%)
+finger_26        us    2 opp   71 other   0 → opp (97%)
+A8500            us    0 opp   10 other   0 → opp (100%)
+TEABSOO          us    2 opp   84 other   0 → opp (98%)
+msyh_miyashimsy  us    1 opp   96 other   0 → opp (99%)
+barcelery2017    us    6 opp   71 other   0 → opp (92%)
+hotkunman        us    1 opp   24 other   0 → opp (96%)
+nyanta_O619      us    0 opp   64 other   1 → opp (100%)
+myman6           us   25 opp   28 other  38 → opp (53%)
+yamakaji21       us    0 opp   42 other   0 → opp (100%)
+Alpha_Fox9       us   41 opp   20 other  30 → us (67%)
+MandoolsLove     us   61 opp   13 other   2 → us (82%)
+FKSefukel        us    0 opp   38 other   0 → opp (100%)
+GAETERLING       us   33 opp    0 other   1 → us (100%)
+
+our players: 12
+  GK   myman6           avg (26.1, 31.3)  samples 43
+  LB   GAETERLING       avg (67.4, 13.2)  samples 504
+  LCB  KR_Gang          avg (26.4, 23.5)  samples 37
+  RCB  DUNK(나)          avg (46.1, 38.4)  samples 3036
+  RB   Kidz43           avg (53.5, 39.0)  samples 1248
+  CDM  JANG_BUTTER      avg (48.7, 33.3)  samples 999
+  LCM  ufomg123         avg (58.3, 27.5)  samples 912
+  RCM  MandoolsLove     avg (61.9, 41.3)  samples 413
+  CAM  comba3           avg (65.4, 36.5)  samples 502
+  LS   SAMBAEK          avg (71.8, 30.1)  samples 582
+  RS   GarethBale0413   avg (67.9, 40.6)  samples 604
+  -    Alpha_Fox9       avg (65.8, 37.9)  samples 203
+learned marker hue {'DUNK(나)': 165, 'ufomg123': 75, 'GarethBale0413': 22, 'comba3': 35, 'myman6': 72}
+{'kept': 4465, 'far': 5923, 'other-color': 54, 'color-mismatch': 44}
