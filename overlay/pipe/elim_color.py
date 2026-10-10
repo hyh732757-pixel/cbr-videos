@@ -7,6 +7,8 @@ EC_ALL=0: 아래 '남은 한 명' 장면에서만
 결과: who_src="elim_c". 다시 돌려도 같은 결과"""
 import json, os, collections, numpy as np
 DMAX = float(os.environ.get("EC_DMAX", "14")); MARGIN = float(os.environ.get("EC_MARGIN", "6")); ALL = os.environ.get("EC_ALL", "1") == "1"
+WHITE = np.array([232., 119., 138.])   # 상대 선수 머리 위 흰 삼각형(m11 상대 이름표 상자 tri3 중앙값)
+GOAL = lambda o: o.get("xy") and (o["xy"][0] < 12 or o["xy"][0] > 93)   # 골키퍼 구역 상자는 색으로 안 붙임
 f = json.load(open("feat_labeled.json")); T = json.load(open("tri3.json")) if os.path.exists("tri3.json") else {}
 for v in f.values():
     for o in v or []:
@@ -25,7 +27,9 @@ R = {}
 for w, x in ref.items():   # 기준색: 5개 이상 + 퍼짐(중앙값 거리) 10 이하만 — 마커를 잘못 읽는 선수(m11 MandoolsLove 갈색→흰색 오인, 퍼짐 16.8)는 기준색 없음
     if len(x) < 5: continue
     a = np.array(x); m = np.median(a, 0)
-    if np.median(np.linalg.norm(a - m, axis=1)) <= 10: R[w] = m
+    if np.median(np.linalg.norm(a - m, axis=1)) > 10: continue
+    if np.linalg.norm(m - WHITE) < 15: continue   # 상대 선수 마커(흰색)와 구분 안 되는 기준색은 안 씀(VIP1 MandoolsLove 흰색 → 상대 GK 223상자 오표시)
+    R[w] = m
 n = 0; st = collections.Counter()
 for k, v in f.items():
     us = [(j, o) for j, o in enumerate(v or []) if o.get("real", True) and o.get("team2") == "us"]
@@ -49,9 +53,12 @@ if ALL:   # 실험: 남은 한 명 조건 없이, 빈 우리 상자 색이 한 �
             nm = o.get("name")
             if nm and nm.lower() not in Llow: continue
             if kit_ok and o.get("kit_p") is not None and o["kit_p"] < 0.5: continue
+            if GOAL(o): continue
             t = tri(k, j)
             if not t: continue
-            c = np.array(t[3:6]); d = sorted((float(np.linalg.norm(c - q)), p) for p, q in R.items() if p in L)
+            c = np.array(t[3:6])
+            if np.linalg.norm(c - WHITE) < 15: continue
+            d = sorted((float(np.linalg.norm(c - q)), p) for p, q in R.items() if p in L)
             if len(d) < 2 or d[0][0] > DMAX or d[1][0] < d[0][0] + MARGIN or d[0][1] in have: continue
             o["who"] = d[0][1]; o["who_src"] = "elim_c"; have.add(d[0][1]); n += 1; st["색만:" + d[0][1]] += 1
 json.dump(f, open("feat_labeled.json", "w"))
