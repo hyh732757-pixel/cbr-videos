@@ -51,7 +51,7 @@ jobs:
         env: {MID: "${{ inputs.mid }}", RID: "${{ github.run_id }}"}
         run: |
           D="results/${MID}_${RID}"; mkdir -p "/tmp/res/$D"
-          cp out/*.json out/*.txt out/*.log "/tmp/res/$D/" 2>/dev/null || true
+          cp out/*.json out/*.txt out/*.log "/tmp/res/$D/" 2>/dev/null || true; [ -f out/key_json.tgz ] && [ $(stat -c%s out/key_json.tgz) -lt 95000000 ] && cp out/key_json.tgz "/tmp/res/$D/" || true
           git config --global user.name "github-actions"; git config --global user.email "actions@users.noreply.github.com"
           git clone -q --depth 1 --branch results "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" /tmp/rb 2>/dev/null || { git init -q /tmp/rb && git -C /tmp/rb checkout -q -b results && git -C /tmp/rb remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"; }
           mkdir -p "/tmp/rb/$D" && cp -r "/tmp/res/$D/." "/tmp/rb/$D/"
