@@ -1,0 +1,5 @@
+[10:23:50] 영상 받기 354M (누적 1초)
+[10:23:50] 라인업 지정 {"LS": "GarethBale0413", "RS": "Osumane_dembele1", "CAM": "ufomg123", "LCM": "JANG_BUTTER", "RCM": "Kidz43", "CDM": "Hoiibe", "LB": "GAETERLING", "LCB": "KR_Gang", "RCB": "Gamm_jA", "RB": "MandoolsLove", "GK": "myman6"} (누적 1초)
+[10:55:23] 영상 처리 끝 (누적 1894초)
+[10:58:36] 결과 계산 m10 (150~1061초) === 자동 점검 m10 SAR 0:0 — 경고 1개 · 확인 필요 0개 === (누적 2087초)
+[10:58:36] 완료 (누적 2087초)
