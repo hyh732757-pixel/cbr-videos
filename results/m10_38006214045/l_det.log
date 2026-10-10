@@ -1,0 +1,14 @@
+Creating new Ultralytics Settings v0.0.8 file ✅ 
+View Ultralytics Settings with 'yolo settings' or at '/home/runner/.config/Ultralytics/settings.json'
+Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/usage/settings.
+Loading /home/claude/models/det1_int8_openvino_model for OpenVINO inference...
+Using OpenVINO LATENCY mode for batch=1 inference on CPU...
+0 3510 2s
+500 3510 30s
+1000 3510 59s
+1500 3510 89s
+2000 3510 118s
+2500 3510 147s
+3000 3510 176s
+3500 3510 205s
+done 3510 206s

@@ -1,0 +1,12 @@
+half boundary video s 552
+half 1 our leftmost share 0.87 → attack right
+half 2 our leftmost share 0.38 → attack left
+공 접촉 기준 에피소드 사용 253
+receptions us 162 opp 91
+opp roles {'AZLATANERA': 'CB', 'KABO_H': 'LM', 'YAMADAMITIO': 'LS', 'OLambesten': 'LCM', '2KR_Fantomupein': 'LCB', 'jet_black_boy10': 'RCM', 'Asriel29': 'RS', 'GI_GGS': 'RM', 'ToRPopcom': 'RCB', '2pirop2345': 'CM'}
+빠른 공 한 장면 접촉 제외 {}
+마커 색 불일치로 뺀 접촉 장면 {'GAETERLING': 2, 'JANG_BUTTER': 0, 'KR_Gang': 0, 'myman6': 0, 'Kidz43': 12, 'Hoiibe': 1, 'MandoolsLove': 5, 'Osumane_dembele1': 4, 'GarethBale0413': 0, 'Gamm_jA': 0, 'ufomg123': 0}
+띠 표본(우리 소유 중 공 3m, 1초 1개) {'GAETERLING': 25, 'KR_Gang': 24, 'myman6': 11, 'Kidz43': 45, 'Hoiibe': 18, 'Osumane_dembele1': 22, 'MandoolsLove': 38, 'GarethBale0413': 12, 'JANG_BUTTER': 31, 'Gamm_jA': 24, 'ufomg123': 21}
+our row 0 opp SAR final us:opp [0, 0] []
+화면 밖 보정(대형 x) {'in RB': '57.6 → 56.7', 'in LCB': '34.6 → 36.2', 'in LS': '68.4 → 65.2', 'in RCM': '49.5 → 49.8', 'in CDM': '47.6 → 48.0', 'in RS': '69.5 → 65.5', 'in CAM': '60.4 → 59.1', 'in LB': '55.7 → 52.9', 'in RCB': '35.9 → 35.2', 'in LCM': '53.0 → 52.9', 'out LS': '66.8 → 65.6', 'out RS': '66.7 → 65.2', 'out LB': '48.1 → 48.0', 'out CAM': '61.8 → 60.8', 'out LCM': '54.7 → 54.6', 'out CDM': '50.7 → 50.8', 'out RCM': '51.8 → 51.4', 'out RB': '49.6 → 49.6', 'out RCB': '38.2 → 40.2', 'out LCB': '40.4 → 41.5'}
+saved m10 score CBR 0 : 0 SAR turnovers 42 passes 102 0
