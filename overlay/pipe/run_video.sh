@@ -26,7 +26,7 @@ python3 $P/team_orient.py > l_orient0.log 2>&1; if [ $? -eq 3 ]; then   # 유니
 python3 $P/identify.py 3 > l_id.log 2>&1; python3 $P/who_filter.py >> l_id.log 2>&1; s "선수 판별"
 python3 $P/apply_marker2.py > l_mk.log 2>&1; python3 $P/marker_id.py >> l_mk.log 2>&1; python3 $P/dedupe.py >> l_mk.log 2>&1; python3 $P/star_fix.py >> l_mk.log 2>&1; s "마커 $(grep -m1 marker l_mk.log)"
 python3 $P/team_feat.py > l_team.log 2>&1; python3 $P/team_cls.py >> l_team.log 2>&1; python3 $P/kit_apply.py >> l_team.log 2>&1; python3 $P/lineup_check.py | tee -a l_team.log; s "팀 구분·라인업 점검"
-python3 $P/marker_net.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/opp_name_fix.py | tee -a l_team.log; python3 $P/elim_fill2.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/gk_fix.py | tee -a l_team.log; s "마커 모델·위치 이어붙이기 이름 채움·골키퍼 판별"
+python3 $P/marker_net.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/opp_name_fix.py | tee -a l_team.log; python3 $P/elim_fill2.py | tee -a l_team.log; python3 /home/claude/mk3/scan_f5.py | tee -a l_team.log; python3 $P/elim_color.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/gk_fix.py | tee -a l_team.log; s "마커 모델·위치 이어붙이기 이름 채움·골키퍼 판별"
 python3 $P/ball_track.py > l_ball.log 2>&1; python3 $P/ball_events.py >> l_ball.log 2>&1; s "공 추적 $(grep 공 l_ball.log | tr "\n" " ")"
 python3 $P/ball_mid2.py 0 99999999 > l_ballmid.log 2>&1 && rm -rf f10m; s "0.1초 공 추적 $(tail -1 l_ballmid.log)"   # 결과 계산에서 ball_mid.json 사용(2026-10-09 적용)
 python3 $P/find_matches.py; s "완료"

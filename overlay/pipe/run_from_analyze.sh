@@ -13,6 +13,6 @@ python3 $P/team_orient.py > l_orient0.log 2>&1; if [ $? -eq 3 ]; then
 python3 $P/identify.py 3 > l_id.log 2>&1; python3 $P/who_filter.py >> l_id.log 2>&1; s "선수 판별"
 python3 $P/apply_marker2.py > l_mk.log 2>&1; python3 $P/marker_id.py >> l_mk.log 2>&1; python3 $P/dedupe.py >> l_mk.log 2>&1; python3 $P/star_fix.py >> l_mk.log 2>&1; s "마커 $(grep -m1 marker l_mk.log)"
 python3 $P/team_feat.py > l_team.log 2>&1; python3 $P/team_cls.py >> l_team.log 2>&1; python3 $P/kit_apply.py >> l_team.log 2>&1; python3 $P/lineup_check.py | tee -a l_team.log; s "팀 구분·라인업 점검 $(grep CNN l_team.log)"
-python3 $P/marker_net.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/opp_name_fix.py | tee -a l_team.log; python3 $P/elim_fill2.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/gk_fix.py | tee -a l_team.log; python3 $P/star_recheck.py >> l_team.log 2>&1 && python3 $P/gk_fix.py >> l_team.log 2>&1; s "마커 모델·위치 이어붙이기 이름 채움·골키퍼 판별"
+python3 $P/marker_net.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/opp_name_fix.py | tee -a l_team.log; python3 $P/elim_fill2.py | tee -a l_team.log; python3 /home/claude/mk3/scan_f5.py | tee -a l_team.log; python3 $P/elim_color.py | tee -a l_team.log; python3 $P/pos_fill.py | tee -a l_team.log; python3 $P/gk_fix.py | tee -a l_team.log; python3 $P/star_recheck.py >> l_team.log 2>&1 && python3 $P/gk_fix.py >> l_team.log 2>&1; s "마커 모델·위치 이어붙이기 이름 채움·골키퍼 판별"
 python3 $P/ball_events.py > l_be.log 2>&1; s "공 소유 $(tail -1 l_be.log)"
 s "완료"
