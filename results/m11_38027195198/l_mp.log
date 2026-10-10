@@ -1,0 +1,12 @@
+half boundary video s 684
+half 1 our leftmost share 0.84 → attack right
+half 2 our leftmost share 0.36 → attack left
+공 접촉 기준 에피소드 사용 257
+receptions us 155 opp 102
+opp roles {'nyanta_O619': 'RCM', 'barcelery2017': 'RCB', 'finger_26': 'RM', 'msyh_miyashimsy': 'GK', 'TEABSOO': 'CB', 'FKSefukel': 'LCM', 'hotkunman': 'LS', 'yamakaji21': 'LCB', 'kankanO91': 'CM'}
+빠른 공 한 장면 접촉 제외 {}
+마커 색 불일치로 뺀 접촉 장면 {'SAMBAEK': 5, 'ufomg123': 4, 'Gamm_jA': 0, 'KR_Gang': 0, 'JANG_BUTTER': 0, 'Kidz43': 4, 'MandoolsLove': 0, 'GarethBale0413': 1, 'comba3': 0, 'GAETERLING': 0, 'myman6': 0}
+띠 표본(우리 소유 중 공 3m, 1초 1개) {'ufomg123': 25, 'Gamm_jA': 23, 'KR_Gang': 1, 'JANG_BUTTER': 33, 'Kidz43': 47, 'GarethBale0413': 13, 'myman6': 9, 'comba3': 19, 'SAMBAEK': 20, 'GAETERLING': 13, 'MandoolsLove': 24}
+our row 0 opp SPF final us:opp [0, 0] []
+화면 밖 보정(대형 x) {'in LS': '78.2 → 70.6', 'in LCM': '56.8 → 55.5', 'in CAM': '63.8 → 61.7', 'in CDM': '50.8 → 49.9', 'in RS': '75.1 → 68.8', 'in RB': '64.4 → 60.0', 'in RCB': '36.8 → 37.3', 'in RCM': '48.7 → 46.3', 'in LCB': '유지(추정 실패/표본 부족)', 'in LB': '61.9 → 58.8', 'out CDM': '52.6 → 52.7', 'out RCB': '38.6 → 41.3', 'out RB': '54.9 → 53.7', 'out RS': '72.3 → 70.0', 'out RCM': '51.0 → 50.4', 'out LCM': '57.3 → 57.8', 'out CAM': '63.4 → 63.3', 'out LS': '74.7 → 70.7', 'out LB': '55.8 → 54.1'}
+saved m11 score CBR 0 : 0 SPF turnovers 52 passes 75 0

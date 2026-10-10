@@ -1,0 +1,17 @@
+18s  us real 31463 marker 21776 (69%)
+  group 0 {'MandoolsLove': 22, 'SAMBAEK': 1} → MandoolsLove
+  group 1 {'JANG_BUTTER': 123, 'GAETERLING': 1} → JANG_BUTTER
+  group 2 {'SAMBAEK': 49} → SAMBAEK
+  group 3 {'comba3': 75, 'SAMBAEK': 1, 'GarethBale0413': 1} → comba3
+  group 4 {'ufomg123': 101} → ufomg123
+  group 5 {'Kidz43': 136, 'MandoolsLove': 8, 'KR_Gang': 5} → Kidz43
+  group 6 {'GarethBale0413': 43} → GarethBale0413
+  group 7 {'JANG_BUTTER': 1, 'Kidz43': 1} → None
+  group 9 {'GAETERLING': 36, 'KR_Gang': 1} → GAETERLING
+  group 10 {'ufomg123': 1} → None
+  group 11 {'Kidz43': 1} → None
+cluster→name {2: 'SAMBAEK', 4: 'ufomg123', 5: 'Kidz43', 1: 'JANG_BUTTER', 6: 'GarethBale0413', 3: 'comba3', 0: 'MandoolsLove', 9: 'GAETERLING'}
+our goal x by half {0: 0, 1: 105}
+{'tracklet': 23183, 'none': 3517, 'marker': 1624, 'tag': 797, 'gk': 331}
+중복 정리 {'unique': 22436, 'dup_groups': 4101, 'dropped_all': 1168, 'unset': 5947, 'by_track': 2611, 'by_tag': 322}
+'나' 연결 보정 170개 · 판단 보류 16개
