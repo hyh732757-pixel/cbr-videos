@@ -1,0 +1,37 @@
+SAMBAEK          us   28 opp    0 other   1 → us (100%)
+ufomg123         us   88 opp    5 other   6 → us (95%)
+finger_26        us    3 opp   71 other   0 → opp (96%)
+DUNK(나)          us   70 opp    4 other   1 → us (95%)
+KR_Gang          us    6 opp    0 other   0 → us (100%)
+JANG_BUTTER      us  117 opp    6 other   2 → us (95%)
+Kidz43           us  163 opp   14 other  18 → us (92%)
+GarethBale0413   us   47 opp    3 other   0 → us (94%)
+comba3           us   53 opp    6 other  11 → us (90%)
+kankanO91        us    1 opp   19 other   0 → opp (95%)
+TEABSOO          us    2 opp   96 other   0 → opp (98%)
+msyh_miyashimsy  us    0 opp   93 other   0 → opp (100%)
+barcelery2017    us    4 opp   69 other   0 → opp (95%)
+hotkunman        us    1 opp   23 other   0 → opp (96%)
+nyanta_O619      us    0 opp   64 other   1 → opp (100%)
+myman6           us   26 opp   28 other  37 → opp (52%)
+yamakaji21       us    1 opp   42 other   0 → opp (98%)
+Alpha_Fox9       us   41 opp   21 other  29 → us (66%)
+MandoolsLove     us   64 opp   13 other   2 → us (83%)
+FKSefukel        us    0 opp   39 other   0 → opp (100%)
+GAETERLING       us   33 opp    1 other   1 → us (97%)
+
+our players: 12
+  GK   myman6           avg (26.8, 31.2)  samples 41
+  LB   GAETERLING       avg (67.6, 13.2)  samples 506
+  LCB  KR_Gang          avg (26.5, 23.5)  samples 37
+  RCB  DUNK(나)          avg (46.2, 38.5)  samples 2954
+  RB   Kidz43           avg (52.7, 37.8)  samples 1318
+  CDM  JANG_BUTTER      avg (50.8, 32.4)  samples 928
+  LCM  ufomg123         avg (57.5, 25.8)  samples 1168
+  RCM  Alpha_Fox9       avg (61.8, 37.9)  samples 245
+  CAM  comba3           avg (65.9, 35.1)  samples 593
+  LS   SAMBAEK          avg (68.0, 31.1)  samples 676
+  RS   GarethBale0413   avg (69.0, 41.2)  samples 698
+  -    MandoolsLove     avg (58.0, 35.7)  samples 456
+learned marker hue {'DUNK(나)': 165, 'ufomg123': 75, 'GarethBale0413': 22, 'comba3': 35, 'myman6': 72}
+{'far': 6563, 'kept': 4560, 'other-color': 69, 'color-mismatch': 25}
