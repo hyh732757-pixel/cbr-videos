@@ -1,0 +1,37 @@
+zibakusouti      us    4 opp   79 other   8 → opp (95%)
+universe_llove   us    7 opp   43 other   5 → opp (86%)
+SAMBAEK          us   56 opp    0 other   0 → us (100%)
+yukiS8S8f        us    6 opp   32 other   9 → opp (84%)
+ufomg123         us   89 opp    0 other   1 → us (100%)
+JANG_BUTTER      us  128 opp    0 other   0 → us (100%)
+Kidz43           us  115 opp    2 other   0 → us (98%)
+MandoolsLove     us   99 opp   15 other   1 → us (87%)
+Mao_ichika22     us   28 opp    1 other  45 → us (97%)
+GarethBale0413   us   58 opp   16 other   0 → us (78%)
+satellitefreez   us    7 opp   31 other   1 → opp (82%)
+Y4nami           us   17 opp   14 other   3 → us (55%)
+tamagosandoS     us    4 opp   23 other   6 → opp (85%)
+GAETERLING       us   51 opp    0 other   0 → us (100%)
+KR_Gang          us   92 opp    0 other   0 → us (100%)
+DUNK(나)          us   76 opp    0 other   0 → us (100%)
+comba3           us   54 opp    1 other   0 → us (98%)
+GARO_GOLD        us    5 opp   58 other   3 → opp (92%)
+myman6           us   21 opp    6 other  27 → us (78%)
+2sameferrari0458 us    6 opp   38 other   0 → opp (86%)
+
+our players: 13
+  GK   myman6           avg (6.6, 29.4)  samples 33
+  LB   GAETERLING       avg (47.2, 21.2)  samples 659
+  LCB  KR_Gang          avg (25.4, 28.9)  samples 497
+  RCB  DUNK(나)          avg (36.0, 40.1)  samples 3250
+  RB   MandoolsLove     avg (50.4, 53.5)  samples 409
+  CDM  JANG_BUTTER      avg (47.5, 36.3)  samples 951
+  LCM  ufomg123         avg (55.1, 21.9)  samples 988
+  RCM  Kidz43           avg (54.7, 41.2)  samples 910
+  CAM  comba3           avg (61.1, 32.6)  samples 731
+  LS   SAMBAEK          avg (69.6, 26.9)  samples 566
+  RS   GarethBale0413   avg (68.5, 41.3)  samples 777
+  -    Y4nami           avg (64.8, 38.8)  samples 450
+  -    Mao_ichika22     avg (78.0, 29.7)  samples 120
+learned marker hue {'DUNK(나)': 165, 'SAMBAEK': 142, 'ufomg123': 76, 'GarethBale0413': 22, 'Y4nami': 22, 'comba3': 34, 'myman6': 71}
+{'far': 4218, 'kept': 4097, 'color-mismatch': 75, 'other-color': 50}
