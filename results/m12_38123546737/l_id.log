@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/claude/pipe/identify.py", line 8, in <module>
+    feat = {int(k): v for k, v in json.load(open("feat_labeled.json")).items()}
+                                            ~~~~^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'feat_labeled.json'
+Traceback (most recent call last):
+  File "/home/claude/pipe/who_filter.py", line 4, in <module>
+    feat = {int(k): v for k, v in json.load(open("feat_labeled.json")).items()}
+                                            ~~~~^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'feat_labeled.json'

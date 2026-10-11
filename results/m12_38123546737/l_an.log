@@ -1,0 +1,18 @@
+star team {'opp': 2794, 'us': 41, 'other': 9}
+colored markers on our team: 271
+marker clusters {np.int32(0): (173, 'H70 S140 V252'), np.int32(1): (17, 'H4 S116 V224'), np.int32(2): (16, 'H131 S146 V202'), np.int32(3): (18, 'H35 S147 V234'), np.int32(4): (6, 'H106 S124 V221'), np.int32(5): (23, 'H22 S158 V213'), np.int32(6): (8, 'H169 S167 V208'), np.int32(7): (10, 'H60 S136 V225')}
+chosen identities: 0
+star → pid {0: 2}
+half 1: our player is leftmost in 0.65 of frames → we attack right
+half 2: our player is leftmost in 0.36 of frames → we attack left
+pid counts {}
+Traceback (most recent call last):
+  File "/home/claude/pipe/analyze.py", line 94, in <module>
+    C = np.linalg.norm((P + shift)[:, None] - T[None], axis=2)
+                        ~~^~~~~~~
+ValueError: operands could not be broadcast together with shapes (0,) (2,) 
+Traceback (most recent call last):
+  File "/home/claude/pipe/tracklets.py", line 7, in <module>
+    feat = {int(k): v for k, v in json.load(open("feat_labeled.json")).items()}
+                                            ~~~~^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'feat_labeled.json'

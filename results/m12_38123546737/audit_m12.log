@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/claude/pipe/match_pipeline.py", line 22, in <module>
+    feat_all = {int(k): v for k, v in json.load(open("feat_labeled.json")).items()}
+                                                ~~~~^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'feat_labeled.json'

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/claude/pipe/ball_track.py", line 27, in <module>
+    ks = sorted(int(k) for k in json.load(open("feat_labeled.json")))
+                                          ~~~~^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'feat_labeled.json'
+Traceback (most recent call last):
+  File "/home/claude/pipe/ball_events.py", line 9, in <module>
+    B = json.load(open("ball.json"))["ball"]; f = json.load(open("feat_labeled.json"))
+                  ~~~~^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'ball.json'
