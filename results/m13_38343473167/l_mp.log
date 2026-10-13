@@ -1,0 +1,12 @@
+half boundary video s 426
+half 1 our leftmost share 0.73 → attack right
+half 2 our leftmost share 0.3 → attack left
+공 접촉 기준 에피소드 사용 230
+receptions us 123 opp 107
+opp roles {'HideO__O': 'LCB', 'KFPL_Son': 'LS', 'Huchu0515': 'RS', 'HOZYMA': 'GK', 'BOX_BROWN': 'RCM'}
+빠른 공 한 장면 접촉 제외 {}
+마커 색 불일치로 뺀 접촉 장면 {'GarethBale0413': 3, 'KR_Gang': 3, 'JANG_BUTTER': 2, 'Kidz43': 4, 'MandoolsLove': 0, 'ufomg123': 3, 'Gamm_jA': 0, 'comba3': 5, 'GAETERLING': 0, 'myman6': 0}
+띠 표본(우리 소유 중 공 3m, 1초 1개) {'KR_Gang': 16, 'JANG_BUTTER': 32, 'GarethBale0413': 26, 'MandoolsLove': 21, 'ufomg123': 29, 'Gamm_jA': 16, 'Kidz43': 42, 'GAETERLING': 9, 'comba3': 14, 'myman6': 5}
+our row 0 opp KOR final us:opp [1, 1] [('opp', 157.0), ('us', 5324.0)]
+화면 밖 보정(대형 x) {'in CAM': '51.9 → 50.7', 'in RCB': '33.7 → 36.0', 'in RS': '60.7 → 59.1', 'in LCM': '50.7 → 49.1', 'in LCB': '35.4 → 37.2', 'in CDM': '56.1 → 55.0', 'in LB': '51.3 → 49.6', 'in LS': '75.6 → 68.6', 'in RB': '61.1 → 61.1', 'out CAM': '48.1 → 47.9', 'out RB': '45.6 → 46.6', 'out LCB': '36.4 → 38.6', 'out LS': '71.1 → 66.6', 'out RCB': '34.2 → 37.5', 'out CDM': '53.2 → 53.5', 'out RS': '57.0 → 57.6', 'out LCM': '46.7 → 47.0', 'out LB': '42.6 → 44.2'}
+saved m13 score CBR 1 : 1 KOR turnovers 46 passes 58 0

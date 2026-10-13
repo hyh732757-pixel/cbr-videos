@@ -1,0 +1,46 @@
+crop=
+영상 높이 1080
+[03:52:43] 프레임 추출 990초/4950장/중간 4950장 (누적 121초)
+[03:52:53] 장면 구분 시계 이상값 제거 2 / 858 (누적 131초)
+[03:52:56] 라인업 없음-캡처필요 (누적 134초)
+[03:56:32] 선수·공 검출 (누적 350초)
+[03:59:53] 카메라 done 198s usable 3343 / 3600 509 refined (누적 551초)
+[04:00:26] 카메라 보정 done 32s usable 3410/3600 rescued 67 (누적 584초)
+[04:01:55] 특징 추출 이름표 연결 정리 {'kept': 1932, 'icon': np.int64(2098), 'dropped': 142, 'moved': 283} (누적 673초)
+[04:02:02] 팀·추적 (누적 680초)
+[04:05:05] 이름 판별 {'ours(model)': 1106, 'undecided→ocr': 193, 'model-rejected': 3, 'opp(ocr)': 1038, 'opp-unnamed': 44, 'ours(ocr)': 20} 상대 이름(자동) ['BOX_BROWN', 'Geojiman', 'HOZYMA', 'HanRYang73', 'HideO__O', 'Huchu0515', 'KFPL_Son', 'SAMBAEK', 'Salita', 'cowbex', 'idontwannawait', 'yebind']  (누적 863초)
+[04:05:05] 팀 방향 점검: 라인업 이름표 0개 중 us 0 (1.00) · other 0 · opp 0 (누적 863초)
+[04:05:11] 선수 판별 (누적 869초)
+[04:05:50] 마커 22s  us real 32938 marker 23523 (71%) (누적 908초)
+새 팀원·게스트 후보: [['SAMBAEK', 22, 24], ['HanRYang73', 30, 30]]
+미출전 가능성: ['Durayun_z']
+우리 선수 이름이 상대 유니폼 위에: 없음
+[04:06:49] 팀 구분·라인업 점검 (누적 967초)
+done 3410
+마커 색 학습 때와 비교(Lab 거리) {'GarethBale0413': 1.2, 'comba3': 3.2, 'KR_Gang': 108.9, 'JANG_BUTTER': 1.4, 'Kidz43': 1.4, 'GAETERLING': 84.6}
+마커 모델 건너뜀: 이번 경기 마커 색이 학습 때와 다르거나 확인 불가
+위치채움 1220개 · 우리팀 이름 비율 74.3% → 78.2%
+Traceback (most recent call last):
+  File "/home/claude/pipe/opp_name_fix.py", line 13, in <module>
+    L = [w.lower() for r, w in json.load(open("lineup.json")).items()] + ["gamm_ja", "dunk(나)"]
+                                         ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lineup.json'
+Traceback (most recent call last):
+  File "/home/claude/pipe/elim_fill2.py", line 9, in <module>
+    lu = json.load(open("lineup.json"))
+                   ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lineup.json'
+Traceback (most recent call last):
+  File "/home/claude/pipe/elim_color.py", line 16, in <module>
+    lu = json.load(open("lineup.json"))
+                   ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lineup.json'
+위치채움 1220개 · 우리팀 이름 비율 74.3% → 78.2%
+[0~1000000000초] 경기 시계 45분 시점 영상 426초 → 진영 바뀜 장면 2130
+[0~1000000000초] GK 이름표 47개 · 진영 바뀌는 장면 2130 · 일치 46/47 · 전반 우리 골대 왼쪽
+GK 판별 {'us_gk 군집 → opp': 824, 'GK 지정': 1018, 'us_gk 군집 → us': 183, 'GK 아닌 상자 myman6 이름 지움': 19, 'GK 상자의 필드선수 이름 교체': 7, 'GK 팀 바로잡음': 8, '별 없는 DUNK 이름 지움': 3}
+[04:07:47] 마커 모델·위치 이어붙이기 이름 채움·골키퍼 판별 (누적 1025초)
+[04:16:43] 공 추적 공 추적 3410장 8.9분 · 전체화면 비율 0.37 · 공 찾음 0.76 · 이어붙임 382장 원터치 인정 15(같은 선수 소유에 합침 0) · 공 가진 장면 1226 · 소유 구간 231 (우리 123, 상대 108) · 소유 시간 우리 116초 상대 102초 · {'us_pass_named': 59, 'us_pass_or_dribble': 24, 'opp_pass_or_dribble': 69, 'opp_lost': 21, 'us_lost': 30}  (누적 1561초)
+[04:24:48] 0.1초 공 추적 [전체] 부분검사 3138회 2.1분 · 전체화면 1022회 5.6분 · 중간 장면 3560장 8.0분 · 전체화면 0.29 · 공 찾음 0.76 · 좌표 있음 0.71 (누적 2046초)
+경기 후보 1: 영상 20초 ~ 983초, 경기시계 0분 ~ 92분
+[04:24:48] 완료 (누적 2046초)

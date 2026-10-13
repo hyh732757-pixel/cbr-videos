@@ -1,0 +1,7 @@
+마커 색 불일치로 뺀 접촉 장면 {'GarethBale0413': 3, 'KR_Gang': 3, 'JANG_BUTTER': 2, 'Kidz43': 4, 'MandoolsLove': 0, 'ufomg123': 3, 'Gamm_jA': 0, 'comba3': 5, 'GAETERLING': 0, 'myman6': 0}
+our row 0 opp KOR final us:opp [1, 1] [('opp', 157.0), ('us', 5324.0)]
+Traceback (most recent call last):
+  File "/home/claude/pipe/audit.py", line 21, in <module>
+    lu = json.load(open("lineup.json")); ROLE = {nm(n): r for r, n in lu.items()}
+                   ~~~~^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'lineup.json'
