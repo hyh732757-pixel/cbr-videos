@@ -1,0 +1,23 @@
+name: EA 클럽 기록 받기
+on:
+  workflow_dispatch:
+    inputs:
+      club: {description: "인게임 클럽 이름", required: true, default: "CHUBERUP"}
+permissions: {contents: write}
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: 받기
+        run: |
+          D="ea/$(date -u +%Y%m%d_%H%M%S)"; echo "D=$D" >> $GITHUB_ENV
+          python3 tools/fetch_ea.py "${{ inputs.club }}" "out/$D" | tee out_log.txt
+          echo "::notice title=EA 결과::$(tail -12 out_log.txt | cut -c1-200 | tr '\n' '|')"
+      - name: results 브랜치에 저장
+        run: |
+          git config user.name "gha"; git config user.email "gha@users.noreply.github.com"
+          git fetch origin results || true
+          mkdir -p /tmp/save && cp -r out/ea /tmp/save/
+          git checkout -B results origin/results || git checkout --orphan results
+          mkdir -p ea && cp -r /tmp/save/ea/* ea/ && git add ea && git commit -m "EA 클럽 기록 $D" && git push origin results
