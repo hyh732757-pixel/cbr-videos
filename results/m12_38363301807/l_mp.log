@@ -1,0 +1,12 @@
+half boundary video s 682
+half 1 our leftmost share 0.36 → attack left
+half 2 our leftmost share 0.75 → attack right
+공 접촉 기준 에피소드 사용 237
+receptions us 145 opp 92
+opp roles {'zibakusouti': 'LCM', 'satellitefreez': 'RS', 'GARO_GOLD': 'RM', '2sameferrari0458': 'LM', 'universe_llove': 'CM', 'tamagosandoS': 'LCB', 'yukiS8S8f': 'RCB'}
+빠른 공 한 장면 접촉 제외 {}
+마커 색 불일치로 뺀 접촉 장면 {'SAMBAEK': 2, 'comba3': 3, 'ufomg123': 5, 'JANG_BUTTER': 0, 'MandoolsLove': 6, 'GarethBale0413': 1, 'Gamm_jA': 0, 'Kidz43': 0, 'KR_Gang': 0, 'GAETERLING': 1, 'myman6': 0}
+띠 표본(우리 소유 중 공 3m, 1초 1개) {'SAMBAEK': 14, 'comba3': 28, 'ufomg123': 33, 'JANG_BUTTER': 26, 'MandoolsLove': 19, 'Kidz43': 30, 'KR_Gang': 20, 'Gamm_jA': 18, 'GarethBale0413': 15, 'GAETERLING': 20, 'myman6': 5}
+our row 1 opp FCH final us:opp [6, 0] [('us', 164.0), ('us', 2904.0), ('us', 3100.0), ('us', 3763.0), ('us', 4405.0), ('us', 5061.0)]
+화면 밖 보정(대형 x) {'in RCB': '33.1 → 33.0', 'in LCB': '32.8 → 33.9', 'in RCM': '49.3 → 48.4', 'in RB': '52.4 → 52.3', 'in RS': '72.4 → 65.5', 'in LB': '52.6 → 48.2', 'in LCM': '49.5 → 48.5', 'in CDM': '46.3 → 45.8', 'in LS': '72.9 → 67.0', 'in CAM': '58.8 → 57.5', 'out RCB': '38.3 → 40.0', 'out LCB': '40.1 → 41.7', 'out RB': '47.2 → 47.7', 'out LS': '69.5 → 67.8', 'out RS': '69.5 → 67.3', 'out CAM': '62.8 → 61.9', 'out LB': '48.1 → 48.3', 'out CDM': '50.1 → 50.6', 'out RCM': '54.4 → 54.6', 'out LCM': '55.6 → 55.7'}
+saved m12 score CBR 6 : 0 FCH turnovers 57 passes 74 0
