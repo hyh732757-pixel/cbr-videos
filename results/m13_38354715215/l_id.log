@@ -1,0 +1,40 @@
+GarethBale0413   us   62 opp    0 other   0 → us (100%)
+comba3           us   67 opp    0 other   0 → us (100%)
+KR_Gang          us   41 opp    0 other   1 → us (100%)
+JANG_BUTTER      us  128 opp    0 other   1 → us (100%)
+Kidz43           us  135 opp    1 other   0 → us (99%)
+MandoolsLove     us   74 opp    1 other   0 → us (99%)
+Geojiman         us    5 opp    1 other  53 → us (83%)
+ufomg123         us   74 opp    0 other   1 → us (100%)
+Huchu0515        us   10 opp   31 other  66 → opp (76%)
+myman6           us   47 opp   32 other  41 → us (59%)
+idontwannawait   us    4 opp   10 other  14 → opp (71%)
+SAMBAEK          us   14 opp    0 other   0 → us (100%)
+DUNK(나)          us   69 opp    0 other   0 → us (100%)
+HanRYang73       us   22 opp   14 other  35 → us (61%)
+yebind           us    3 opp    1 other  21 → us (75%)
+BOX_BROWN        us    1 opp   16 other  65 → opp (94%)
+Salita           us    5 opp    6 other  35 → opp (55%)
+HideO__O         us    1 opp   54 other   3 → opp (98%)
+cowbex           us    3 opp   16 other  17 → opp (84%)
+HOZYMA           us    7 opp   27 other  28 → opp (79%)
+KFPL_Son         us    3 opp   21 other   2 → opp (88%)
+GAETERLING       us   18 opp    0 other   0 → us (100%)
+
+our players: 14
+  GK   myman6           avg (12.7, 33.3)  samples 46
+  LB   GAETERLING       avg (50.4, 17.1)  samples 202
+  LCB  KR_Gang          avg (29.4, 35.6)  samples 457
+  RCB  DUNK(나)          avg (36.2, 39.2)  samples 3481
+  RB   Kidz43           avg (53.5, 46.5)  samples 1050
+  CDM  JANG_BUTTER      avg (47.8, 36.7)  samples 935
+  LCM  ufomg123         avg (58.9, 23.5)  samples 790
+  RCM  MandoolsLove     avg (67.9, 51.3)  samples 764
+  CAM  comba3           avg (64.7, 35.3)  samples 697
+  LS   Geojiman         avg (81.8, 27.5)  samples 321
+  RS   GarethBale0413   avg (72.0, 46.1)  samples 377
+  -    SAMBAEK          avg (56.0, 24.4)  samples 194
+  -    HanRYang73       avg (98.8, 30.0)  samples 78
+  -    yebind           avg (25.2, 39.5)  samples 53
+learned marker hue {'GarethBale0413': 22, 'comba3': 36, 'DUNK(나)': 165, 'ufomg123': 74, 'myman6': 71}
+{'far': 3179, 'kept': 3188, 'color-mismatch': 50, 'other-color': 40}
