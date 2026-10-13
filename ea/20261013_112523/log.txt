@@ -1,0 +1,13 @@
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen5&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/allTimeLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+ERR https://proclubs.ea.com/api/fc/currentSeasonLeaderboard/search?platform=common-gen4&clubName=CHUBERUP HTTP Error 403: Forbidden
+찾은 클럽 {}
