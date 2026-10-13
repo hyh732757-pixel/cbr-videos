@@ -44,6 +44,7 @@ jobs:
           [ -f out/timeline.txt ] && echo "::notice title=단계별 시간::$(tr '\n' '|' < out/timeline.txt)"
           [ -f out/run_video.log ] && echo "::notice title=처리 로그 끝::$(grep -a '누적' out/run_video.log | tail -25 | cut -c1-160 | tr '\n' '|')"
           [ -f out/run_video.log ] && echo "::notice title=오류::$(grep -a -i -E 'error|Traceback' out/run_video.log | tail -8 | cut -c1-200 | tr '\n' '|')"
+          for f in out/preflight_*.txt; do [ -f "$f" ] && echo "::notice title=$f::$(cat "$f" | cut -c1-220 | tr '\n' '|')"; done
           for f in out/audit_*.log; do [ -f "$f" ] && echo "::notice title=$f::$(grep -a -E '===|⚠|🔎|Traceback|Error' "$f" | head -12 | cut -c1-200 | tr '\n' '|')"; done
           true
       - name: 결과를 results 브랜치에 저장

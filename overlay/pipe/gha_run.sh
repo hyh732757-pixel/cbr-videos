@@ -20,6 +20,9 @@ while read -r M A B; do
   bash /home/claude/pipe/finish_match.sh "$M" "$A" "$B" "" > "$OUT/audit_$M.log" 2>&1
   cp "match_$M.json" "$OUT/" 2>/dev/null; cp "goals_$M.json" "$OUT/" 2>/dev/null
   log "결과 계산 $M ($A~$B초) $(grep '===' "$OUT/audit_$M.log")"
+  cp "$OUT/audit_$M.log" "$OUT/timeline.txt" . 2>/dev/null; cp l_*.log . 2>/dev/null
+  python3 /home/claude/pipe/preflight.py "$M" > "$OUT/preflight_$M.txt" 2>&1; cp preflight.json "$OUT/preflight_$M.json" 2>/dev/null
+  log "가정 점검 $M $(tail -1 "$OUT/preflight_$M.txt")"
 done < "$OUT/matches.txt"
 cp lineup.json matches.json l_*.log "$OUT/" 2>/dev/null
 tar czf "$OUT/key_json.tgz" feat_labeled.json feat_labeled_before_gk.json ball.json ball_mid.json ball_events.json cam_track.json scene_lab.json scene_raw.json matches.json lineup.json eps_*.json contacts_*.json goals_*.json tri3.json 2>/dev/null
