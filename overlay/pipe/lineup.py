@@ -3,7 +3,7 @@
 import json, os
 DEFAULT = {"GK": "myman6", "LB": "GAETERLING", "LCB": "KR_Gang", "RCB": "Gamm_jA", "RB": "MandoolsLove",
            "CDM": "ufomg123", "LCM": "JANG_BUTTER", "RCM": "Durayun_z", "CAM": "Kidz43", "LS": "GarethBale0413", "RS": "comba3"}
-ROSTER = set(DEFAULT.values()) | {"Proclub_DD", "SAMBAEK"}   # 팀원(이름 모델 학습 전). SAMBAEK 은 팀원(2026-10-13 사용자 확인)
+ROSTER = set(DEFAULT.values()) | {"Proclub_DD", "SAMBAEK", "Hoiibe", "Osumane_dembele1"}   # 팀원(이름 모델 학습 전). SAMBAEK 은 팀원(2026-10-13 사용자 확인)
 ROLE_ORDER = ["GK", "LB", "LCB", "RCB", "RB", "CDM", "LCM", "RCM", "CAM", "LS", "RS"]
 LINEUP = json.load(open("lineup.json")) if os.path.exists("lineup.json") else DEFAULT
 OUR_ROLE = {n: r for r, n in LINEUP.items()}                 # 이름 → 포지션
