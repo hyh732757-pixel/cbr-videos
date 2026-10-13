@@ -1,0 +1,5 @@
+[06:38:05] 영상 받기 371M (누적 11초)
+[06:38:05] 라인업 지정 {"LS": "SAMBAEK", "RS": "GarethBale0413", "CAM": "comba3", "LCM": "ufomg123", "RCM": "Kidz43", "CDM": "JANG_BUTTER", "LB": "GAETERLING", "LCB": "KR_Gang", "RCB": "Gamm_jA", "RB": "MandoolsLove", "GK": "myman6"} (누적 11초)
+[07:12:17] 영상 처리 끝 (누적 2063초)
+[07:15:22] 결과 계산 m13 (20~983초) === 자동 점검 m13 KOR 1:1 — 경고 1개 · 확인 필요 0개 === (누적 2248초)
+[07:15:24] 완료 (누적 2250초)

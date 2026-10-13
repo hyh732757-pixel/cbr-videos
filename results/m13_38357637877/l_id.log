@@ -1,0 +1,39 @@
+GarethBale0413   us   62 opp    0 other   0 → us (100%)
+comba3           us   68 opp    0 other   0 → us (100%)
+KR_Gang          us   43 opp    0 other   1 → us (100%)
+JANG_BUTTER      us  127 opp    0 other   1 → us (100%)
+Kidz43           us  141 opp    1 other   0 → us (99%)
+MandoolsLove     us   73 opp    1 other   0 → us (99%)
+Geojiman         us    4 opp    1 other  53 → us (80%)
+ufomg123         us   75 opp    0 other   1 → us (100%)
+Huchu0515        us   11 opp   29 other  64 → opp (72%)
+myman6           us   47 opp   32 other  41 → us (59%)
+idontwannawait   us    4 opp   12 other  11 → opp (75%)
+SAMBAEK          us   15 opp    0 other   0 → us (100%)
+DUNK(나)          us   69 opp    0 other   0 → us (100%)
+HanRYang73       us   21 opp   17 other  34 → us (55%)
+yebind           us    4 opp    1 other  21 → us (80%)
+BOX_BROWN        us    2 opp   17 other  64 → opp (89%)
+Salita           us    4 opp    6 other  37 → opp (60%)
+HideO__O         us    2 opp   52 other   3 → opp (96%)
+cowbex           us    3 opp   15 other  18 → opp (83%)
+HOZYMA           us    7 opp   30 other  26 → opp (81%)
+KFPL_Son         us    3 opp   22 other   2 → opp (88%)
+GAETERLING       us   20 opp    0 other   0 → us (100%)
+
+our players: 13
+  GK   myman6           avg (12.5, 33.3)  samples 47
+  LB   GAETERLING       avg (40.1, 16.6)  samples 158
+  LCB  KR_Gang          avg (28.0, 33.4)  samples 525
+  RCB  DUNK(나)          avg (35.8, 39.3)  samples 3514
+  RB   MandoolsLove     avg (71.3, 52.8)  samples 708
+  CDM  JANG_BUTTER      avg (47.5, 37.0)  samples 868
+  LCM  ufomg123         avg (60.4, 23.2)  samples 745
+  RCM  Kidz43           avg (51.5, 46.8)  samples 1074
+  CAM  comba3           avg (64.1, 34.4)  samples 591
+  LS   SAMBAEK          avg (63.6, 24.9)  samples 162
+  RS   GarethBale0413   avg (75.4, 44.4)  samples 453
+  -    Geojiman         avg (83.1, 29.2)  samples 374
+  -    HanRYang73       avg (97.5, 29.2)  samples 76
+learned marker hue {'GarethBale0413': 22, 'comba3': 36, 'DUNK(나)': 165, 'ufomg123': 74, 'myman6': 71, 'SAMBAEK': 142}
+{'kept': 3149, 'far': 3055, 'other-color': 49, 'color-mismatch': 56}
