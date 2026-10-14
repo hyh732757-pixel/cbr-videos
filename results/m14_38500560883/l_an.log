@@ -1,0 +1,12 @@
+star team {'opp': 2996, 'other': 54, 'us': 3}
+흰 유니폼 경기로 판단 → 팀 맞바꿈, star team {'us': 2996, 'other': 54, 'opp': 3}
+colored markers on our team: 7375
+marker clusters {np.int32(0): (1075, 'H74 S113 V226'), np.int32(1): (2185, 'H22 S178 V212'), np.int32(2): (446, 'H142 S218 V200'), np.int32(3): (2871, 'H35 S144 V242'), np.int32(4): (357, 'H176 S185 V208'), np.int32(5): (173, 'H107 S134 V188'), np.int32(6): (144, 'H166 S179 V202'), np.int32(7): (124, 'H5 S159 V210')}
+chosen identities: 5
+star → pid {0: 5}
+half 1: our player is leftmost in 0.30 of frames → we attack left
+half 2: our player is leftmost in 0.29 of frames → we attack left
+pid counts {0: 3964, 3: 2846, 1: 2155, 2: 430, 4: 356}
+role assignment {'LCM': (0, [54.4, 32.3], 3964), 'CDM': (3, [51.9, 33.6], 2846), 'RCM': (1, [53.4, 34.7], 2155), 'RCB': (2, [50.9, 35.4], 430), 'CAM': (4, [56.0, 32.5], 356)}
+tracks 3506 median len 4.0 mean 11.6
+pid filled by tracklets 7747 conflicting tracks 303

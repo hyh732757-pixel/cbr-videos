@@ -1,0 +1,45 @@
+Kkobugi_98       us   10 opp    0 other  57 → us (100%)
+BEOPJUKJULCHA    us    6 opp   25 other  26 → opp (81%)
+Woororo          us    4 opp    0 other  69 → us (100%)
+LCBSV            us    3 opp    2 other  56 → us (60%)
+OATOOO           us    2 opp    0 other 106 → us (100%)
+Shxula           us    2 opp    0 other  42 → us (100%)
+kangsin4         us    1 opp    7 other  26 → opp (88%)
+diSgui5e         us   85 opp    0 other   3 → us (100%)
+comba3           us   65 opp    0 other   0 → us (100%)
+GAETERLING       us   54 opp    0 other   0 → us (100%)
+Kidz43           us  166 opp    2 other   0 → us (99%)
+MandoolsLove     us   46 opp    0 other   0 → us (100%)
+GarethBale0413   us   27 opp    0 other   0 → us (100%)
+HoYoung_GK       us   42 opp   23 other  28 → us (65%)
+myman6           us   70 opp   35 other  56 → us (67%)
+IM_MINJ          us   72 opp    0 other   0 → us (100%)
+JANG_BUTTER      us   73 opp    0 other   3 → us (100%)
+hongno           us    3 opp    2 other  68 → us (60%)
+Dog_SellerO5     us    2 opp    0 other  41 → us (100%)
+DUNK(나)          us   62 opp    0 other   0 → us (100%)
+NarangDO         us    3 opp    0 other  35 → us (100%)
+SAMBAEK          us   30 opp    0 other   0 → us (100%)
+
+our players: 19
+  GK   LCBSV            avg (36.3, 22.3)  samples 105
+  LB   GAETERLING       avg (48.5, 22.0)  samples 722
+  LCB  MandoolsLove     avg (43.5, 17.7)  samples 386
+  RCB  SAMBAEK          avg (41.4, 38.2)  samples 461
+  RB   hongno           avg (63.1, 45.5)  samples 143
+  CDM  diSgui5e         avg (50.2, 30.6)  samples 842
+  LCM  NarangDO         avg (57.3, 25.1)  samples 62
+  RCM  Kkobugi_98       avg (58.4, 38.9)  samples 198
+  CAM  GarethBale0413   avg (60.9, 30.2)  samples 475
+  LS   Dog_SellerO5     avg (67.7, 19.7)  samples 113
+  RS   HoYoung_GK       avg (62.0, 35.3)  samples 112
+  -    DUNK(나)          avg (53.5, 32.4)  samples 3482
+  -    Woororo          avg (89.5, 41.4)  samples 75
+  -    comba3           avg (57.9, 36.1)  samples 1044
+  -    Kidz43           avg (51.3, 30.8)  samples 1225
+  -    Shxula           avg (51.7, 32.0)  samples 220
+  -    myman6           avg (49.6, 32.6)  samples 64
+  -    JANG_BUTTER      avg (54.5, 37.1)  samples 655
+  -    IM_MINJ          avg (52.5, 35.9)  samples 1081
+learned marker hue {'DUNK(나)': 165, 'diSgui5e': 74, 'comba3': 35, 'GarethBale0413': 21, 'myman6': 71, 'SAMBAEK': 143}
+{'far': 4059, 'kept': 3350, 'color-mismatch': 72, 'other-color': 152}
